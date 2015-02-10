@@ -1,21 +1,28 @@
+GIT
+  remote: https://github.com/01Click/ruby-saml.git
+  revision: 358a8512b4453aae765dcd63f2ff75a3b76dbdd0
+  ref: 0.9.0+patches-thread-cert
+  specs:
+    ruby-saml (0.9)
+      nokogiri (~> 1.5.0)
+      uuid (~> 2.3)
+
 PATH
   remote: .
   specs:
     omniauth-saml (1.3.0)
       omniauth (~> 1.1)
-      ruby-saml (~> 0.8.1)
+      ruby-saml (~> 0.9.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.2.4)
-    hashie (3.3.2)
+    hashie (3.4.0)
     macaddr (1.7.1)
       systemu (~> 2.6.2)
-    mini_portile (0.6.2)
     multi_json (1.3.7)
-    nokogiri (1.6.5)
-      mini_portile (~> 0.6.0)
+    nokogiri (1.5.11)
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
@@ -30,9 +37,6 @@ GEM
     rspec-expectations (2.14.4)
       diff-lcs (>= 1.1.3, < 2.0)
     rspec-mocks (2.14.4)
-    ruby-saml (0.8.1)
-      nokogiri (>= 1.5.0)
-      uuid (~> 2.3)
     simplecov (0.7.1)
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
@@ -48,4 +52,5 @@ DEPENDENCIES
   omniauth-saml!
   rack-test (~> 0.6)
   rspec (~> 2.8)
+  ruby-saml!
   simplecov (~> 0.6)
