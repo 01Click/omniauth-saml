@@ -1,6 +1,8 @@
 require 'omniauth'
 require 'ruby-saml'
 
+OneLogin::RubySaml::Attributes.single_value_compatibility = true
+
 module OmniAuth
   module Strategies
     class SAML
@@ -96,7 +98,15 @@ module OmniAuth
         }
       end
 
-      extra { { :raw_info => @attributes } }
+      extra do
+        # convert attributes into a hash that respects the single/multi value
+        # setting from RubySaml::Attributes.
+        raw_info = @attributes.each_with_object({}) do |(name, _values), hash|
+          hash[name] = @attributes[name]
+        end
+
+        { :raw_info => raw_info }
+      end
     end
   end
 end
