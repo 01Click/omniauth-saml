@@ -3,14 +3,14 @@ GIT
   revision: 358a8512b4453aae765dcd63f2ff75a3b76dbdd0
   ref: 0.9.0+patches-thread-cert
   specs:
-    ruby-saml (0.9)
-      nokogiri (~> 1.5.0)
+    ruby-saml (0.9.1)
+      nokogiri (>= 1.5.10)
       uuid (~> 2.3)
 
 PATH
   remote: .
   specs:
-    omniauth-saml (1.3.0)
+    omniauth-saml (1.3.1)
       omniauth (~> 1.1)
       ruby-saml (~> 0.9.0)
 
@@ -21,8 +21,10 @@ GEM
     hashie (3.4.0)
     macaddr (1.7.1)
       systemu (~> 2.6.2)
+    mini_portile (0.6.2)
     multi_json (1.3.7)
-    nokogiri (1.5.11)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
@@ -41,7 +43,7 @@ GEM
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
     simplecov-html (0.7.1)
-    systemu (2.6.4)
+    systemu (2.6.5)
     uuid (2.3.7)
       macaddr (~> 1.0)
 
