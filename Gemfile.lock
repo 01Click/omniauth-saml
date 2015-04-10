@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/01Click/ruby-saml.git
-  revision: 358a8512b4453aae765dcd63f2ff75a3b76dbdd0
-  ref: 0.9.0+patches-thread-cert
+  revision: 445b58f840644a3a50d9305e262c1fbdcb9a647f
+  ref: patches-cert-noko-attrib
   specs:
     ruby-saml (0.9.1)
       nokogiri (>= 1.5.10)
